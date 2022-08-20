@@ -1,0 +1,17 @@
+.connectButton {
+  border-radius: 16px;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(185, 185, 185);
+  padding: 10px 32px;
+  font-family: inherit;
+  font-weight: 700;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+
+.connectButton:hover {
+  background: rgb(228, 228, 228);
+}

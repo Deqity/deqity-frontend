@@ -1,0 +1,228 @@
+.companyInfo {
+  margin-top: 3.25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.companyBox {
+  margin-top: 3.25rem;
+  max-width: 1000px;
+  height: 100%;
+  border-radius: 28px;
+  position: relative;
+  background-color: rgb(247, 255, 251);
+  padding: 10px 50px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.companyBox > h1 {
+  text-decoration: underline rgb(177, 223, 200);
+  font-size: 36px;
+  width: 100%;
+  margin-bottom: 0.25rem;
+  padding: 0px 40px 0px 40px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  gap: 140px;
+}
+.info > p {
+  max-width: 320px;
+}
+.info > h4 {
+  margin-top: 16px;
+}
+
+.dullutionTitle {
+  text-decoration: underline rgb(177, 223, 200);
+}
+
+.dillutionInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.dillutionInfo > h3 {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.noActiveSale {
+  margin-top: 40px;
+  font-size: 20px;
+  padding: 8px 18px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 18px;
+  margin-bottom: -8px;
+}
+
+.noActiveSales {
+  margin-top: 65px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 8px 18px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 18px;
+}
+
+.buyDil {
+  border-radius: 16px;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(185, 185, 185);
+  padding: 10px 14px;
+  box-shadow: 1px 5px 17px 0.5px gray;
+  font-family: inherit;
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.buyDil:hover {
+  background: rgb(228, 228, 228);
+}
+
+.privateSales {
+  margin-top: 3rem;
+  margin-bottom: -2rem;
+  text-decoration: underline rgb(177, 223, 200);
+}
+
+.peerSale {
+  margin-top: 3rem;
+  margin-bottom: 0.8rem;
+  padding: 16px 32px 16px 32px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(218, 245, 232),
+    rgb(181, 231, 195)
+  );
+  box-shadow: 1px 7px 17px 0.9px gray;
+  border-radius: 22px;
+}
+
+.peerSeller {
+  margin: 0;
+  margin-bottom: 0.2rem;
+}
+
+.peerShares {
+  margin: 0;
+  margin-top: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.peerPrice {
+  margin: 0;
+  margin-bottom: 2.4rem;
+}
+
+.peerBuy {
+  border-radius: 16px;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(185, 185, 185);
+  padding: 10px 18px;
+  box-shadow: 1px 5px 17px 0.5px gray;
+  font-family: inherit;
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+
+.peerBuy:hover {
+  background: rgb(228, 228, 228);
+}
+
+.startSale {
+  align-items: center;
+  justify-content: center;
+}
+
+.startSaleInput {
+  margin-top: 22px;
+  margin-bottom: 6px;
+  margin-right: 6px;
+  border-radius: 8px;
+  max-height: 52px;
+  height: 50px;
+  max-width: 180px;
+  width: 180px;
+  font-family: inherit;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  font-size: 14px;
+  padding-left: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(185, 185, 185);
+}
+
+.startSaleInput:hover {
+  border-style: dashed;
+}
+
+.privateBuyInput {
+  margin-top: -10px;
+  margin-bottom: 12px;
+  margin-right: 6px;
+  border-radius: 8px;
+  max-height: 52px;
+  height: 50px;
+  max-width: 180px;
+  width: 180px;
+  font-family: inherit;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  font-size: 14px;
+  padding-left: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(185, 185, 185);
+}
+
+.privateBuyInput:hover {
+  border-style: dashed;
+}
+
+.startButton {
+  border-radius: 16px;
+  margin-left: 12px;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(185, 185, 185);
+  padding: 10px 18px;
+  box-shadow: 1px 5px 17px 0.5px gray;
+  font-family: inherit;
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+
+.startButton:hover {
+  background: rgb(228, 228, 228);
+}
+
+.peerToPeerCards {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 18px;
+}
