@@ -66,11 +66,12 @@ export default function Search() {
           dillutionPrice,
           sharesForSale,
         };
-        setNumOfCompanies(numCompanies);
       }
+      setNumOfCompanies(numCompanies);
     } catch (e) {
       console.log(e);
     }
+
     return companyInfo;
   }
 

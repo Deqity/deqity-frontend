@@ -1,22 +1,25 @@
 import React, { useState } from "react";
-import { Web3Storage } from "web3.storage";
 import placeholder from "../images/companyPlaceholder.jpg";
+import "../styles/searchPage.css";
 
 export default function Company(props) {
   let rendered;
 
-  async function retrieve() {
-    if (rendered === true) {
-      const web3StorageApi = process.env.REACT_APP_STORAGE;
-      const storage = new Web3Storage({ token: web3StorageApi });
-      const res = await storage.get(props.cid);
-      const files = await res.files();
-    }
+  const [description, setDescription] = useState("");
+
+  function loadText() {
+    fetch(
+      `https://gateway.pinata.cloud/ipfs/${props.cid}/description.txt`
+    ).then((r) => {
+      r.text().then((d) => setDescription(d));
+    });
   }
 
   if (props.name !== "") {
     rendered = true;
-    retrieve();
+    if (description == "") {
+      loadText();
+    }
   }
   return (
     <div className="company">
@@ -24,19 +27,20 @@ export default function Company(props) {
         <div className="content">
           <a href={`/company?${props.name}-${props.symbol}`}>
             <div className="content">
-              <img src={placeholder} alt="placeholderImg" />
-
+              <img
+                src={`https://gateway.pinata.cloud/ipfs/${props.cid}/image.jpeg`}
+                alt="placeholderImg"
+              />
               <div className="g">
                 <h1>{`${props.name} (${props.symbol})`}</h1>
-
-                <p>a</p>
+                <p>{description}</p>
                 {props.activeSale ? (
-                  <h4>
+                  <h4 className="saleData">
                     Selling {props.sharesForSale} shares for{" "}
                     {props.dillutionPrice}Ξ per share
                   </h4>
                 ) : (
-                  <h4 className="noActiveSale">No active dillution sale.</h4>
+                  <h4 className="noActiveBanner">No active dilution sale.</h4>
                 )}
               </div>
             </div>

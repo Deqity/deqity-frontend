@@ -102,9 +102,14 @@ a:visited {
   letter-spacing: 0.9px;
 }
 
-.company {
+.companyCards {
   margin-top: 3.25rem;
-  margin-bottom: -1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.company {
+  margin-bottom: 1.2rem;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -134,6 +139,12 @@ a:visited {
   border-radius: 18px;
   margin-right: 16px;
 }
+.g {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .g > h1 {
   font-size: 34px;
   margin-left: auto;
@@ -141,7 +152,7 @@ a:visited {
   text-align: center;
   margin-top: 8px;
 }
-.content > div > h4 {
+.saleData {
   font-size: 20px;
   margin: 0px;
   margin-top: 65px;
@@ -155,8 +166,21 @@ a:visited {
   margin: 0px;
 }
 .content > div > p {
-  margin-top: 26px;
-  margin-bottom: 24px;
+  margin-top: 4px;
+  margin-bottom: 40px;
+  padding: 6px 6px;
   font-weight: 400;
   text-align: center;
+}
+
+.noActiveBanner {
+  margin-top: 0px;
+  max-width: 400px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 20px;
+  padding: 8px 40px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 18px;
+  margin-bottom: 12px;
 }
