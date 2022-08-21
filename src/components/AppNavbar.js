@@ -18,11 +18,6 @@ export default function AppNavbar() {
               </li>
             </ul>
           </a>
-          <input
-            type="search"
-            placeholder="Search Companies"
-            className="searchbar"
-          />
         </div>
         <a href="/tokenize" className="create">
           Tokenize Company
