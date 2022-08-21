@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
+import meta from "../images/metamask.png";
 import "../styles/connectButton.css";
 
 export default function ConnectButton() {
-  const [displayText, setDisplayText] = useState("Connect");
-
   async function connectWalletHandeler() {
     if (window.ethereum !== "undefined") {
       window.ethereum
@@ -16,22 +15,9 @@ export default function ConnectButton() {
     }
   }
 
-  const accountChangedHandler = (newAccount) => {
-    displayOnConnect(newAccount);
-  };
-
-  async function displayOnConnect(user) {
-    if (window.ethereum !== "undefined" && user !== "undefined") {
-      setDisplayText(
-        user.slice(0, 5) + "..." + user.slice(user.length - 4, user.length)
-      );
-    }
-  }
+  function accountChangedHandler(account) {}
 
   window.ethereum.on("accountsChanged", (accounts) => {
-    if (accounts[0] !== "undefined") {
-      displayOnConnect(accounts[0]);
-    }
     window.location.reload();
   });
 
@@ -42,7 +28,8 @@ export default function ConnectButton() {
   return (
     <>
       <button onClick={connectWalletHandeler} className="connectButton">
-        {displayText}
+        <img src={meta} alt="logo" />
+        MetaMask
       </button>
     </>
   );

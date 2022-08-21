@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { sequence } from "0xsequence";
 import { ethers } from "ethers";
 import "../styles/company.css";
 
@@ -26,6 +27,7 @@ export default function PeerToPeerSale(props) {
           window.ethereum
         );
         const signer = await provider.getSigner();
+
         const signerAddr = await signer.getAddress();
         const userBal = await provider.getBalance(signerAddr);
 

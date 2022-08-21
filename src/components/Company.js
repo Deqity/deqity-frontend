@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import placeholder from "../images/companyPlaceholder.jpg";
 import "../styles/searchPage.css";
 
 export default function Company(props) {
@@ -17,7 +16,7 @@ export default function Company(props) {
 
   if (props.name !== "") {
     rendered = true;
-    if (description == "") {
+    if (description === "") {
       loadText();
     }
   }

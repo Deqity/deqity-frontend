@@ -1,5 +1,5 @@
 import React from "react";
-import ConnectButton from "./ConnectButton";
+import ConnectMenu from "./ConnectMenu";
 import logo from "../images/deqityLogo.png";
 import "../styles/searchPage.css";
 
@@ -27,7 +27,7 @@ export default function AppNavbar() {
         <a href="/tokenize" className="create">
           Tokenize Company
         </a>
-        <ConnectButton />
+        <ConnectMenu></ConnectMenu>
       </div>
     </nav>
   );
