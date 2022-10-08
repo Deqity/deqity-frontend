@@ -7,9 +7,10 @@ export default function Company(props) {
   const [description, setDescription] = useState("");
 
   function loadText() {
-    fetch(
-      `https://gateway.pinata.cloud/ipfs/${props.cid}/description.txt`
-    ).then((r) => {
+    fetch(`https://${props.cid}.ipfs.nftstorage.link/description.txt`, {
+      method: "GET",
+      mode: "no-cors",
+    }).then((r) => {
       r.text().then((d) => setDescription(d));
     });
   }
@@ -27,7 +28,7 @@ export default function Company(props) {
           <a href={`/company?${props.name}-${props.symbol}`}>
             <div className="content">
               <img
-                src={`https://gateway.pinata.cloud/ipfs/${props.cid}/image.jpeg`}
+                src={`https://${props.cid}.ipfs.nftstorage.link/image.jpeg`}
                 alt="placeholderImg"
               />
               <div className="g">

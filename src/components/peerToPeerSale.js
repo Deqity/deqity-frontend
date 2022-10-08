@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { sequence } from "0xsequence";
 import { ethers } from "ethers";
 import "../styles/company.css";
 

@@ -9,10 +9,25 @@ body {
   font-family: "Montserrat", sans-serif;
   background-image: linear-gradient(
     to top right,
-    rgb(190, 231, 205),
+    rgb(234, 247, 239),
     rgb(237, 253, 243) 90%,
-    rgb(174, 223, 190)
+    rgb(226, 236, 229)
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+a:visited {
+  text-decoration: none;
 }

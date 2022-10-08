@@ -1,10 +1,10 @@
 {
   "description": "Frontend for the Deqity dapp",
+  "version": "0.2.0",
   "main": "index.js",
   "author": "MaximilianFullStack",
   "license": "GPL-3.0",
   "dependencies": {
-    "0xsequence": "^0.40.5",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
